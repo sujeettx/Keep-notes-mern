@@ -37,7 +37,7 @@ app.use(helmet());
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:5173',
   credentials: true
 }));
 
@@ -45,8 +45,13 @@ app.use(cors({
 app.use(express.static(path.join(__dirname, 'uploads')));
 
 // Mount routers
-app.use('/api/auth', authRoutes);
-app.use('/api/notes', noteRoutes);
+app.use('/auth', authRoutes);
+app.use('/notes', noteRoutes);
+
+// 404 routes
+app.use((req, res, next) => {
+  res.status(404).json({ message: "Route not found" });
+});
 
 // Error handler middleware
 app.use(errorHandler);
