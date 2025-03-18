@@ -1,7 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit';
-import Note from '../features/Notes'
+import Note from '../features/Notes';
+import Auth from '../features/Auth';
 export const store = configureStore({
     reducer:{
-        Notes : Note
+        Notes : Note,
+        Auth: Auth
     }
 })
