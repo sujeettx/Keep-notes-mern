@@ -37,9 +37,10 @@ app.use(helmet());
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:5173',
-  credentials: true
+  origin: 'http://localhost:5173',  // Set to your frontend URL (NO '*')
+  credentials: true  // Allow cookies & auth headers
 }));
+
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'uploads')));
