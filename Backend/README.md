@@ -1,6 +1,6 @@
 # 📝 NoteVault - Modern Note-Taking API
 
-![NoteVault Banner](https://res.cloudinary.com/demo/image/upload/c_scale,w_700/v1631924513/sample.jpg)
+![NoteVault API](https://res.cloudinary.com/demo/image/upload/v1631924076/server-api-banner_rnvw78.gif)
 
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.x-blue.svg)](https://expressjs.com/)
